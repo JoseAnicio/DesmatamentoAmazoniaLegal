@@ -1,29 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5dc; 
-    color: #333;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    margin: 20px; 
-}
-
 header {
     background-color: #556b2f;
     color: white;
     text-align: center;
     padding: 2rem;
+    margin: 0px; 
 }
+
+.linha{
+    width: 100%; /* Define a largura da linha */
+    height: 10px; /* Define a altura da linha */
+    background-color: #ffffff; /* Define a cor da linha (preto neste exemplo) */
+}
+
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f5f5dc; 
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin: 0px; 
+}
+
 
 h1 {
     margin: 0;
     font-size: 2.5rem;
 }
 
-.content {
+.realbody {
+    margin: 0px 400px 0px 400px; /* Topo, direita, baixo, esquerda */
     padding: 20px;
     text-align: left;
+    font-size: 20px;
+    background-color: #bbbbad60; 
+
 }
+
 
 canvas {
     background-color: #e0dccc;
@@ -39,4 +53,60 @@ input[type="date"] {
     padding: 5px;
     border: 1px solid #556b2f; 
     border-radius: 4px;
+}
+
+
+#amazonasdesmatamentotamanho{
+    background: repeating-linear-gradient(
+        45deg, /* Ângulo de 45 graus para as listras diagonais */
+        rgba(22, 10, 0), /* Cor branca transparente */
+        rgba(22, 10, 0) 15px, /* Largura da primeira listra */
+        transparent 10px, /* Começa a transparência após 10px */
+        transparent 20px /* Define a largura da listra transparente */
+    );
+    display: block; 
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto; 
+}
+
+
+#desmatamentografico{
+    background: repeating-linear-gradient(
+        45deg, /* Ângulo de 45 graus para as listras diagonais */
+        rgba(22, 10, 0), /* Cor branca transparente */
+        rgba(22, 10, 0) 15px, /* Largura da primeira listra */
+        transparent 10px, /* Começa a transparência após 10px */
+        transparent 20px /* Define a largura da listra transparente */
+    );
+    display: block; 
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto; 
+}
+
+#desmatamentoporano{
+    background: repeating-linear-gradient(
+        45deg, /* Ângulo de 45 graus para as listras diagonais */
+        rgba(22, 10, 0), /* Cor branca transparente */
+        rgba(22, 10, 0) 15px, /* Largura da primeira listra */
+        transparent 10px, /* Começa a transparência após 10px */
+        transparent 20px /* Define a largura da listra transparente */
+    );
+    display: block; 
+    padding: 10px;
+    border-radius: 5px;
+    margin: 0 auto; 
+}
+
+footer{
+    font-size: 15px;
+    color: #ffff;
+    padding: 20px;
+    text-align: center;
+    background-color: #556b2f;
+}
+
+footer a {
+    color: #ffffff; /* Muda a cor do link para vermelho */
 }
