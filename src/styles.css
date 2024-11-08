@@ -121,7 +121,8 @@ footer a {
 
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+        text-align: center;
     }
     
     .realbody {
@@ -137,7 +138,8 @@ footer a {
 
 @media (max-width: 480px) {
     h1 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
+        text-align: center;
     }
 
     .realbody {
