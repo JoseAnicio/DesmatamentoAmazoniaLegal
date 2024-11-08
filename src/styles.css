@@ -1,43 +1,79 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f5f5dc;
+    color: #333;
+    text-align: left;
+    max-width: 100%;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+
+
 header {
     background-color: #556b2f;
     color: white;
     text-align: center;
     padding: 2rem;
-    margin: 0px; 
+    background: repeating-linear-gradient(
+        90deg,
+        #556b2f,
+        #556b2f, 18px,
+        #1b220f 25px,
+        #1b220f 20px
+    );
+    /*background: linear-gradient(#556b2f, #6a8639, #dd7513); */  
 }
 
-.linha{
-    width: 100%; /* Define a largura da linha */
-    height: 10px; /* Define a altura da linha */
-    background-color: #ffffff; /* Define a cor da linha (preto neste exemplo) */
+#tparte1{
+  
+    display: inline-block;
+    background-color: black;
+    border: 2px solid black;
+}
+
+#tparte2{
+    margin-top: 5px;
+    display: inline-block;
+    background-color: black;
+    border: 2px solid black;
+}
+
+#subtitulo{
+    display: inline-block;
+    background-color: black;
+    margin-top: 5px;
+    border: 2px solid black; 
 }
 
 
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #f5f5dc; 
-    color: #333;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    margin: 0px; 
+.linha {
+    width: 100%;
+    height: 10px;
+    background-color: #ffffff;
 }
-
 
 h1 {
-    margin: 0;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .realbody {
-    margin: 0px 400px 0px 400px; /* Topo, direita, baixo, esquerda */
-    padding: 20px;
-    text-align: left;
-    font-size: 20px;
-    background-color: #bbbbad60; 
-
+    padding: 40px 20px; 
+    font-size: 25px;
+    background-color: #bbbbad60;
+    margin: 0 auto;
+    max-width: 800px;
 }
-
 
 canvas {
     background-color: #e0dccc;
@@ -46,60 +82,32 @@ canvas {
 }
 
 label {
-    color: #556b2f; 
+    color: #556b2f;
 }
 
 input[type="date"] {
     padding: 5px;
-    border: 1px solid #556b2f; 
+    border: 1px solid #556b2f;
     border-radius: 4px;
 }
 
-
-#amazonasdesmatamentotamanho{
-    background: repeating-linear-gradient(
-        45deg, /* Ângulo de 45 graus para as listras diagonais */
-        rgba(22, 10, 0), /* Cor branca transparente */
-        rgba(22, 10, 0) 15px, /* Largura da primeira listra */
-        transparent 10px, /* Começa a transparência após 10px */
-        transparent 20px /* Define a largura da listra transparente */
-    );
-    display: block; 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
     padding: 10px;
     border-radius: 5px;
-    margin: 0 auto; 
-}
-
-
-#desmatamentografico{
+    margin: 0 auto;
     background: repeating-linear-gradient(
-        45deg, /* Ângulo de 45 graus para as listras diagonais */
-        rgba(22, 10, 0), /* Cor branca transparente */
-        rgba(22, 10, 0) 15px, /* Largura da primeira listra */
-        transparent 10px, /* Começa a transparência após 10px */
-        transparent 20px /* Define a largura da listra transparente */
+        45deg,
+        rgba(22, 10, 0),
+        rgba(22, 10, 0) 15px,
+        transparent 10px,
+        transparent 20px
     );
-    display: block; 
-    padding: 10px;
-    border-radius: 5px;
-    margin: 0 auto; 
 }
 
-#desmatamentoporano{
-    background: repeating-linear-gradient(
-        45deg, /* Ângulo de 45 graus para as listras diagonais */
-        rgba(22, 10, 0), /* Cor branca transparente */
-        rgba(22, 10, 0) 15px, /* Largura da primeira listra */
-        transparent 10px, /* Começa a transparência após 10px */
-        transparent 20px /* Define a largura da listra transparente */
-    );
-    display: block; 
-    padding: 10px;
-    border-radius: 5px;
-    margin: 0 auto; 
-}
-
-footer{
+footer {
     font-size: 15px;
     color: #ffff;
     padding: 20px;
@@ -108,5 +116,31 @@ footer{
 }
 
 footer a {
-    color: #ffffff; /* Muda a cor do link para vermelho */
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+    
+    .realbody {
+        padding: 20px 10px; 
+        font-size: 21px;
+    }
+
+    footer {
+        font-size: 10px;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    .realbody {
+        font-size: 21px;
+    }
 }
