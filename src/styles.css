@@ -19,36 +19,34 @@ ol {
 }
 
 
-
 header {
     background-color: #556b2f;
     color: white;
     text-align: center;
-    padding: 2rem;
-    background: repeating-linear-gradient(
-        90deg,
-        #556b2f,
-        #556b2f, 18px,
-        #1b220f 25px,
-        #1b220f 20px
-    );
+    padding: 1rem;
+    background-image: linear-gradient(rgba(85, 107, 47, 0.192), rgba(10, 15, 0, 0.7)), 
+                      url('https://img.freepik.com/free-photo/photo-wall-texture-pattern_58702-14752.jpg?t=st=1738018221~exp=1738021821~hmac=912e20eade63990ff4cabd887480ee1803427794bf34ba1114b5314116a89f0b&w=1380');
+    background-size: cover; /* Ajusta a imagem para cobrir o header */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-position: center;
     /*background: linear-gradient(#556b2f, #6a8639, #dd7513); */  
 }
 
+
 #tparte1{
+    margin-top: 1px;
     display: inline-block;
+
 }
 
 #tparte2{
-    margin-top: 5px;
+    margin-top: 1px;
     display: inline-block;
 }
 
 #subtitulo{
     display: inline-block;
-    background-color: black;
     margin-top: 5px;
-    border: 2px solid black; 
 }
 
 
@@ -114,10 +112,69 @@ footer a {
     color: #ffffff;
 }
 
+.manchas {
+    position: relative; /* Usado para posicionar as manchas dentro do container */
+    top: 0;
+    height: 200px; /* Tamanho da altura da tela */
+    background-color: #f5f5dc; /* Cor de fundo do container */
+    overflow: hidden;
+}
+
+/* Manchas criadas com ::before e ::after */
+.manchas::before, .manchas::after {
+    content: "";
+    position: absolute; /* Posicionamento absoluto dentro do container */
+    border-radius: 50%; /* Tornar as manchas arredondadas */
+    background: rgba(85, 107, 47, 0.8); /* Tom de verde mais escuro */
+    opacity: 0.7; /* Opacidade para dar um efeito mais suave */
+    animation: moveManchas 10s infinite ease-in-out; /* Animação de movimento das manchas */
+}
+
+/* Primeira mancha com tamanho maior */
+.manchas::before {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 20%;
+    background: #556b2fcc; /* Cor de fundo da primeira mancha */
+    animation-duration: 4s; /* Durabilidade da animação */
+}
+
+/* Segunda mancha com tamanho menor */
+.manchas::after {
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 60%;
+    background: #1b220f; /* Tom de verde mais escuro */
+    animation-duration: 8s; /* Durabilidade da animação */
+}
+
+
+
+/* Animação de movimento das manchas */
+@keyframes moveManchas {
+    0% {
+        transform: translate(0, 0); /* Começa na posição original */
+    }
+    50% {
+        transform: translate(200px, 100px); /* Movimento até a metade */
+    }
+    100% {
+        transform: translate(0, 0); /* Volta para a posição original */
+    }
+}
+
+
 @media (max-width: 768px) {
     h1 {
+        margin-top: 15px;
         font-size: 2.5rem;
         text-align: center;
+    }
+
+    #subtitulo {
+        margin-top: 18px; /* Ajuste de margem para dispositivos móveis */
     }
     
     .realbody {
@@ -133,8 +190,13 @@ footer a {
 
 @media (max-width: 480px) {
     h1 {
+        margin-top: 15px;
         font-size: 2.5rem;
         text-align: center;
+    }
+
+    #subtitulo {
+        margin-top: 18px; /* Ajuste de margem para dispositivos móveis */
     }
 
     .realbody {
