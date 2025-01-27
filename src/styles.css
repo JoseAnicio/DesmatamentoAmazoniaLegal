@@ -36,17 +36,12 @@ header {
 }
 
 #tparte1{
-  
     display: inline-block;
-    background-color: black;
-    border: 2px solid black;
 }
 
 #tparte2{
     margin-top: 5px;
     display: inline-block;
-    background-color: black;
-    border: 2px solid black;
 }
 
 #subtitulo{
