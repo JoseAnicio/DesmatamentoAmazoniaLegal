@@ -166,7 +166,7 @@ footer a {
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Ajuste de margem para dispositivos móveis */
     h1 {
         margin-top: 15px;
         font-size: 2.5rem;
@@ -174,7 +174,7 @@ footer a {
     }
 
     #subtitulo {
-        margin-top: 18px; /* Ajuste de margem para dispositivos móveis */
+        margin-top: 18px; 
     }
     
     .realbody {
@@ -188,7 +188,7 @@ footer a {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 480px) { /* Ajuste de margem para dispositivos móveis */
     h1 {
         margin-top: 15px;
         font-size: 2.5rem;
@@ -201,5 +201,21 @@ footer a {
 
     .realbody {
         font-size: 21px;
+    }
+}
+
+@media (max-width: 350px) { /* Ajuste de margem para dispositivos móveis */
+    h1 {
+        margin-top: 15px;
+        font-size: 2.4rem;
+        text-align: center;
+    }
+
+    #subtitulo {
+        margin-top: 18px; /* Ajuste de margem para dispositivos móveis */
+    }
+
+    .realbody {
+        font-size: 18px;
     }
 }
